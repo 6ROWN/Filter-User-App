@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter user</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h4 class="title">SEARCH USER </h4>
+            <small class="subtitle">Search by name or location</small>
+            <div class="search-box">
+                <i class='bx bx-search search-icon'></i>
+                <input type="text" id="filter" placeholder="Search">
+            </div>
+            
+        </div>
+
+        <ul id="results" class="user-list">
+            <div class="error">
+                <p class="error-text">Error fetching data. Check internet connection and retry</p>
+
+            </div>
+            <div class="loading"><i class='bx bx-rotate-right bx-spin bx-rotate-90 load-icon' ></i></div>    
+        </ul>
+        
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
